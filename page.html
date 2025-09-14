@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<section>
+  <Header class="app-header">
+
+
+  <div class="logo">
+    <img src="img/SOS_Pets-removebg-preview.png" alt="" width="150px" height="10px" class="logoimg">
+  </div>
+
+<div class="DivButton">
+  <button>Home</button>
+  <button>Sobre nós</button>
+  <button>Blogs e Ongs</button>
+  <button>Adote um pet</button>
+  <button>Encontre um pet</button>
+ 
+</div>
+<button onclick="Registrar"  class="registrar">Registre-se</button>
+</Header>
+
+   <Div class="container">
+     <div class="imagem">
+        <img src="img/conheca-nossa-familia.webp" alt="">
+
+     </div>
+     <div class="texto">
+      
+       <h1>Um site pensado em ajudar VOCÊ à salvar um animal</h1>
+       <br><br>
+       <h4>
+          O SOS Pets é uma plataforma online simples e intuitiva que conecta pessoas interessadas em doar ou adotar animais. O site permite cadastrar perfis de usuários, publicar anúncios de pets disponíveis para adoção, aplicar filtros por cidade e espécie, além de possibilitar o contato direto entre doadores e adotantes.
+<br><br>
+         Nosso objetivo é incentivar a adoção responsável e reduzir o abandono de animais, oferecendo um espaço acessível e minimalista para ONGs, protetores independentes e amantes de pets.
+<br><br>
+          Além disso, o SOS Pets busca fortalecer a rede de apoio entre comunidades e organizações de proteção animal, promovendo campanhas de conscientização, dicas de cuidados com os pets e histórias inspiradoras de adoções bem-sucedidas. A plataforma foi desenvolvida para ser responsiva e inclusiva, garantindo que qualquer pessoa, em qualquer dispositivo, possa participar e transformar a vida de um animal.</h4>
+      </div>
+    </Div>
+    </section>
+
+
+    <section>
+      <Div class="container2">
+        <div class="texto">
+         <h1>Mais de um milhão de animais abandonados  </h1>
+         <br><br>
+         <h4>Segundo a Organização Mundial da Saúde (OMS), existiam cerca de 30 milhões de animais abandonados nas ruas do Brasil em 2022, sendo 10 milhões de gatos e 20 milhões de cachorros. Esses animais sofrem todo dia com o abandono, doenças físicas e mentais, fome e maus-tratos, sem ter voz para se defender eles dependem de iniciativas governamentais e ongs que trabalham com o resgate, cuidado e adoção.</h4>
+         <br><br>
+         <h4>No Brasil, uma das maiores causas de abandono são problemas comportamentais e a falta de espaço, mas é preciso ter consciência do que esse animal pode sofrer enquanto está na rua e os riscos tanto para a sua saúde mas também os riscos para a saúde dos humanos.</h4>
+        </div>
+        <div class="imagem">
+        <img src="img/petsderua.jpg" alt="">
+
+     </div>
+    </Div>
+    </section>
+
+
+    <section>
+   <Div class="container">
+     <div class="imagem">
+        <img src="img/istockphoto-1445196808-612x612-removebg-preview.png" alt="" width="2000px">
+
+     </div>
+     <div class="texto">
+       <h1>Venha conhecer a nossa familia!</h1>
+       <h3>Um site pensado em ajudar VOCÊ à salvar um animal</h3>
+       <br><br>
+       <h4>
+           Junte-se ao SOS Pets e faça parte de uma comunidade que transforma vidas. Cada cadastro, cada compartilhamento e cada adoção é um passo para reduzir o abandono e dar aos animais uma nova chance de amor e cuidado. Sua participação faz a diferença — doe, adote ou divulgue e ajude a construir um futuro melhor para nossos amigos de quatro patas.
+          <br><br>
+         Ao participar, você não apenas ajuda um pet a encontrar um lar, mas também fortalece a rede de apoio entre pessoas, ONGs e protetores que lutam diariamente pelo bem-estar animal. Sua atitude pode inspirar outros a fazer o mesmo, multiplicando o impacto positivo.
+          <br><br>
+         Sua participação faz a diferença — doe, adote ou divulgue e ajude a construir um futuro melhor e mais digno para nossos amigos de quatro patas.
+      </h4>
+      </div>
+    </Div>
+    </section>
+
+ 
+      <section class="sessao">
+        <div class="card">
+          <header><h3>Cadastre-se</h3></header>
+         <input type="text" name="nome" placeholder="Digite seu nome">
+      <input type="email" name="email" placeholder="abc@gmail.com">
+       <input type="password" name="senha" placeholder="********">
+         <input type="number" name="numero" placeholder="55999999999">
+
+<button type="button" onclick="registrar()">Registrar</button>
+<button type="button" onclick="limpar()">Limpar</button>
+
+          
+        </div>
+      </section>
+ 
+
+<footer>
+  
+  <div class="logo">
+    <img src="img/SOS_Pets-removebg-preview.png" alt=""  class="logoimg">
+  </div>
+</footer>
+
+
+
+
+
+
+<script>
+function registrar() {
+  const nomeInput = document.querySelector('input[name="nome"]');
+  const emailInput = document.querySelector('input[name="email"]');
+  const senhaInput = document.querySelector('input[name="senha"]');
+  const numeroInput = document.querySelector('input[name="numero"]');
+
+  if (!nomeInput || !emailInput || !senhaInput || !numeroInput) {
+    alert('Erro: algum campo não foi encontrado!');
+    return;
+  }
+
+  const nome = nomeInput.value;
+  const email = emailInput.value;
+  const senha = senhaInput.value;
+  const numero = numeroInput.value;
+
+  alert(`Usuário ${nome} cadastrado com sucesso!`);
+}
+
+function limpar() {
+  document.querySelector('input[name="nome"]').value = '';
+  document.querySelector('input[name="email"]').value = '';
+  document.querySelector('input[name="senha"]').value = '';
+  document.querySelector('input[name="numero"]').value = '';
+}
+</script>
+
+</script>
+</body>
+</html>

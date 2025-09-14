@@ -1,0 +1,139 @@
+body{
+  background-color: aliceblue;
+}
+.container{
+display: flex;
+width: 100%;
+background-color: aliceblue;
+
+}
+.container2{
+display: flex;
+width: 100%;
+background-color: aliceblue;
+}
+img{
+  height:400px
+}
+img:hover{
+scale: 1.1;  
+}
+.imagem, .texto {
+  flex: 1;
+
+}
+.imagem img{
+  width: 600px;
+  height: auto;
+}
+.texto{
+  padding: 20px;
+}
+.card{
+  margin: 40px;
+  width: 300px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(200, 141, 255);
+  border-radius: 6px;
+  align-self: center;
+
+}
+.card header{
+  text-align: center;
+  background-color: blueviolet;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+input{
+  margin: 10px;
+  border: none;
+}
+
+.card button{
+  width: 30%;
+  align-self: center;
+  margin: 15px;
+}
+button:hover{
+   margin: 20px;
+  background-color:  rgb(196, 102, 240);
+padding: 4px;
+}
+.sessao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer{
+  background-color:  rgb(209, 108, 255);
+  height: 200px;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+
+}
+.logoimg{
+  margin-left:20px;
+align-self: center;
+width: 300px;
+height: 180px;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo h1{
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+.app-header{
+  background-color: rgb(209, 108, 255) ;
+  background-size:cover;
+  height: 146px;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.registrar{
+  margin-right: 25px;
+  width: 80px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: rgb(255, 241, 110) ;
+  border: solid rgb(255, 241, 110) 1px ;
+}
+
+.registrar:hover{
+  background-color: rgb(248, 233, 98) ;
+  margin-right: 25px;
+  width: 85px;
+  height: 60px;
+  border-radius: 6px;
+}
+button{
+ margin: 10px;
+ align-self:flex-end;
+ border-radius: 7px;
+ background-color: rgb(209, 108, 255);
+ border: none;
+}
+
+button:hover{
+   margin: 10px;
+  background-color:  rgb(196, 102, 240);
+padding: 10px;
+
+}
+.DivButton{
+  display: flex;
+}
